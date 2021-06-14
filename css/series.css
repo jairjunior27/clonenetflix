@@ -1,0 +1,81 @@
+:root{
+    --vermelho: #e9000c;
+    --preta: #000000;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+   
+    
+}
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    background: url(../img/netflix2.png);
+}
+header{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem .8rem;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--preta);
+    
+}
+
+a{
+    margin: 0 2rem 0 0;
+    padding: 0 1rem 0 0;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 20vw;
+    height: 10vh;
+    margin-left: 1rem;
+}
+
+.series{
+    
+    display: flex;
+  
+   background-size: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+    gap: 10px;
+    flex-wrap: wrap;
+   
+}
+
+
+@media(max-width:425px){
+  
+   
+   a{ font-size: .7em;
+    margin: 0 .8rem 0 0;
+    padding: 0 1rem 0 0;
+    
+}
+}
+
+@media(max-width:388px){
+   
+    a{
+        font-size: .7em;
+        margin: 0 0 0 .5rem;
+        padding: 0 1rem 0 0;
+    }
+   
+}
+

@@ -1,0 +1,150 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+}
+header{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem .8rem;
+    background-color: var(--preta);
+    
+}
+
+a{
+    margin: 0 2rem 0 0;
+    padding: 0 1rem 0 0;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo img{
+    width: 20vw;
+    height: 10vh;
+    margin-left: 1rem;
+}
+
+.destaque{
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/velozes.jpg);
+   
+    height: 80vh;
+    background-size: cover;
+  
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+     padding: 1rem;
+    
+}
+
+.titulo{
+    margin-top: 20%;
+    font-size: 4em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.descricao{
+    padding: 1rem;
+    font-family: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+    font-size: large;
+}
+
+.btn{
+ background-color: rgba(0,0,0,.50);
+ color:#fff;
+ border: none;
+ padding: .5rem 1rem;
+ margin-right: .6rem;
+ cursor: pointer;
+ transition: .7s ease all;
+}
+.btn:hover{
+ background-color: #fff;
+ color: #111;
+}
+
+.btn i{
+    margin-right: .3rem;
+}
+.box-filme{
+    width: 100vw;
+    height: 30vh;
+    display: block;
+    overflow: hidden;
+}
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+   z-index: 1;
+  display: flex;
+   position: fixed;
+   visibility: hidden;
+
+}
+.content-modal {
+    display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Times New Roman', Times, serif;
+
+background: linear-gradient(rgba(0, 0, 0, 0.753),rgba(0, 0, 0, 0.897)100%), url(../img/velozes.jpg);
+width: 100vw;
+height: 100vh;
+background-size: cover;
+justify-content: center;
+
+flex-direction: column;
+
+
+}
+p{
+    width: 80vw;
+    color: #c1c3c3;
+    padding: 1rem;
+    font-size: 1.2em;
+    margin-top: .6rem;
+}
+#fechar{
+  position: absolute;
+  right: 60px;
+  top: 20px;
+  font-size: .6em;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  padding: .4rem;
+  border-radius: .4rem;
+  cursor: pointer;
+}
+#fechar:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+    transition: ease-in .4s;
+}
+
+
+.modal_active{
+    visibility: visible;
+}
+
+footer{
+    align-items: center;
+   text-align: center;
+    display: flex;
+    justify-content: center;
+}
